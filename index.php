@@ -6,8 +6,13 @@ function sanitize_url($url) {
     return $url;
 }
 
-
 $url = sanitize_url($_GET['url']);
+
+if(empty($url)) {
+    exit();
+}
+
+
 
 $get = file_get_contents($url);
 
