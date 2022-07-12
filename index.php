@@ -15,6 +15,6 @@ if(empty($url)) {
 
 
 $get = file_get_contents($url);
-
+echo "Hello!!";
 echo $get;
 
